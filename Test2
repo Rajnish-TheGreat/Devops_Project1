@@ -1,0 +1,7 @@
+if sudo docker ps | grep mytestosweb
+then
+sudo docker rm -f mytestosweb
+sudo docker run -d -i -t -p 8085:80 -v /great:/usr/local/apache2/htdocs/ --name mytestosweb httpd
+else
+sudo docker run -d -i -t -p 8085:80 -v /great:/usr/local/apache2/htdocs/ --name mytestosweb httpd
+fi
