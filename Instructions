@@ -15,4 +15,12 @@ Create new file after each major step
    d. Set project to watch as Master1
    c. Save
  6) For test1 and test2 repeat steps 3 and 4 respectively
- 7) 
+ 7) In sourcecode management
+    a. Select git 
+       Provide Repository URL and Credentials of github
+       In additional behaviour select merge before build and provide necessary details
+    b. Set trigger to Trigger builds remotely and provide Authentication Token
+    c. In Post Action Build goto Git Publisher 
+       Select Push Only If Build Succeeds and Merge Results options
+       Put necessary details in Branches option
+  8) Refer ss for further clarifications
