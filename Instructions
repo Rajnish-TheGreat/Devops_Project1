@@ -1,0 +1,13 @@
+Hello everyone.
+This is a project which would automate everything after developer commits code in GIT
+Prerequities: **GIT , Docker and Jenkins** should be pre installed
+Create new file after each major step
+
+**How to deploy the project**
+1) a. Copy paste code of Master1
+   b. Set trigger to **GitHub hook trigger for GITScm polling**
+   c. Save
+2) a. Copy paste code of Master2
+   b. Set trigger to **Build after other projects are built**
+   d. Set project to watch as Master1
+   c. Save
