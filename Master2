@@ -1,0 +1,6 @@
+if sudo docker ps | grep myosweb
+then
+echo "Already Running"
+else
+sudo docker run -d -i -t -p 8084:80 -v /rajnish:/usr/local/apache2/htdocs/ --name myosweb httpd
+fi
